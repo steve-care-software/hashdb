@@ -26,7 +26,7 @@ func createApplication(
 
 // List returns the hashes by kind
 func (app *application) List(context uint, kind uint) ([]hash.Hash, error) {
-	keys, err := app.pointerDB.ContentKeysByKind(context, kind)
+	keys, err := app.pointerDB.ContentKeys(context, kind)
 	if err != nil {
 		return nil, err
 	}
@@ -88,8 +88,18 @@ func (app *application) EraseAll(context uint, kind uint, hashes []hash.Hash) er
 	return nil
 }
 
+// Commit returns the commit by hash
+func (app *application) Commit(context uint, hash hash.Hash) (references.Commit, error) {
+	commits, err := app.pointerDB.Commits(context)
+	if err != nil {
+		return nil, err
+	}
+
+	return commits.Fetch(hash)
+}
+
 func (app *application) retrieveActiveContentKeyByHash(context uint, kind uint, hash hash.Hash) (references.ContentKey, error) {
-	contentKeys, err := app.pointerDB.ContentKeysByKind(context, kind)
+	contentKeys, err := app.pointerDB.ContentKeys(context, kind)
 	if err != nil {
 		return nil, err
 	}

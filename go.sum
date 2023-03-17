@@ -1,4 +1,6 @@
-github.com/steve-care-software/databases v0.0.0-20230317223531-3b355e5cf39b h1:S0yiwZg7uNgEJ0XoGRIPuGJ4K6/PuPTBakZ3hE/SzRQ=
-github.com/steve-care-software/databases v0.0.0-20230317223531-3b355e5cf39b/go.mod h1:Up2IfKgTJpVHXJAdwYQnDINIUj84xnmCLckHa40k4Jw=
+github.com/juju/fslock v0.0.0-20160525022230-4d5c94c67b4b h1:FQ7+9fxhyp82ks9vAuyPzG0/vVbWwMwLJ+P6yJI5FN8=
+github.com/juju/fslock v0.0.0-20160525022230-4d5c94c67b4b/go.mod h1:HMcgvsgd0Fjj4XXDkbjdmlbI505rUPBs6WBMYg2pXks=
+github.com/steve-care-software/databases v0.0.0-20230317225037-cdb3618c31b0 h1:+LtYx0PFNg73ivuF0N0pkXfbgHqrJ1VuTzh3p/aoqdg=
+github.com/steve-care-software/databases v0.0.0-20230317225037-cdb3618c31b0/go.mod h1:Up2IfKgTJpVHXJAdwYQnDINIUj84xnmCLckHa40k4Jw=
 github.com/steve-care-software/libs v0.0.0-20230312132714-485fdb38680d h1:LfO9I0ZWhA5XpfX0HTym2DCNmnjE4prtyaOi65Dy/jA=
 github.com/steve-care-software/libs v0.0.0-20230312132714-485fdb38680d/go.mod h1:MF+XUhALBnkezlmXhGI5ZWB6rG5KE0LB8XhF+l/Bkk8=
